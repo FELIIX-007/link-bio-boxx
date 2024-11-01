@@ -1,0 +1,292 @@
+body{
+    background-color: rgb(63, 61, 61);
+    font-family: "Outfit", sans-serif;
+    padding: 15px 5px;
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 179, 250);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--color-green);
+}
+
+#loading-text {
+    position: absolute;
+    color: var(--color-white);
+    font-size: 3rem;
+    z-index: 10;
+}
+
+.principal{
+    background-color: rgba(0, 0, 0, 0.815);
+    height: 90vh;
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px 5px;
+}
+
+.conteudo img{
+    height: 70px;
+    border-radius: 10px;
+    position: absolute;
+    left: 35px;
+    top: 50px;
+    box-shadow: 1px 1px 5px 1px #0cb7f2;
+}
+
+.titulos h1{
+    position: absolute;
+    left: 115px;
+    font-size: 20px;
+    top: 32px;
+    color: #fff;
+}
+
+.titulos p{
+    position: absolute;
+    left: 115px;
+    top: 70px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.forma{
+    background-color: rgb(63, 61, 61);
+    height: 100px;
+    border-radius: 30px;
+    padding: 10p;
+}
+
+.titulos i{
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    font-size: 50px;
+    color: #fff;
+    animation: rotacao 4s linear infinite;
+}
+
+@keyframes rotacao{
+    fron{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* hard skills */
+
+.habilidades{
+    background-color: rgb(63, 61, 61);
+    height: 100px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 30px;
+}
+
+.skills h1{
+    position: absolute;
+    color: rgb(0, 179, 250);
+    font-size: 20px;
+    font-weight: 600;
+    left: 150px;
+    top: 130px;
+}
+
+.icones-hard{
+    position: absolute;
+    top: 185px ;
+    left: 55px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+/* boneco 3d */
+.boneco{
+    background-color: rgb(63, 61, 61);
+    width: 34%;
+    height:100px;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.boneco img{
+    height: 140px;
+    width: 155px;
+    position: absolute;
+    top: 267px;
+    left: 32px;
+    border-radius: 30px;
+    display: inline-block;
+    animation: moveCorners 4s linear infinite;
+}
+
+
+@keyframes moveCorners {
+    0% { top: 267px; left: 32px; }
+    25% { top: 272px; left: 32px; transform: translateX(-10px); }
+    50% { top: 265px; left: 32px; transform: translate(-10px, -2px); }
+    75% { top: 265px; left: 40px; transform: translateY(-2px); }
+    85% { top:275px; left: 40px; }
+    100%{ top:267px; left: 32px; }
+  }
+
+
+
+/* redes sociais */
+
+.social-insta{
+    background-color: rgb(63, 61, 61);
+    height: 60px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 6px;
+    left: 220px;
+    width: 15%;
+    position: absolute;
+    top: 252px;
+}
+
+.social-insta a{
+    font-size: 60px;
+    color: #ffffff59;
+    position: absolute;
+    top: -2px;
+    left: 5px;
+}
+
+.social-insta:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+.social-git{
+    background-color: rgb(63, 61, 61);
+    height: 60px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 6px;
+    left: 298px;
+    width: 15%;
+    position: absolute;
+    top: 252px;
+}
+
+.social-git a{
+    font-size: 60px;
+    color: #ffffff59;
+    position: absolute;
+    top: -2px;
+    left: 5px;
+}
+
+.social-git:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.social-email{
+    background-color: rgb(63, 61, 61);
+    height: 60px;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    left: 220px;
+    width: 15%;
+    position: absolute;
+    top: 330px;
+}
+
+.social-email a{
+    font-size: 60px;
+    color: #ffffff59;
+    position: absolute;
+    top: -2px;
+    left: 5px;
+}
+
+.social-email:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.social-linkdin{
+        background-color: rgb(63, 61, 61);
+        height: 60px;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 6px;
+        left: 298px;
+        width: 15%;
+        position: absolute;
+        top: 330px;
+}
+
+.social-linkdin a{
+    font-size: 55px;
+    color: #ffffff59;
+    position: absolute;
+    top: 1px;
+    left: 8px;
+}
+
+.social-linkdin:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* meu site */
+
+.portfolio{
+    background-color: rgb(0, 183, 255);
+    height: 80px;
+    border-radius: 30px;
+    margin-top: 10PX;
+    padding: 10px;
+}
+
+.portfolio i{
+    color: #fff;
+    position: absolute;
+    font-size: 45px;
+    top: 450px;
+    left: 40px;
+}
+
+.portfolio h1{
+    position: absolute;
+    left: 150px;
+    font-size: 30px;
+    top:430px ;
+    color: #fff;
+}
+
+.widget1{
+    margin-top: 1px;
+}
+
+.widget1 span{
+    color: #fff;
+    
+}
